@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Your Adoption Visit - Pawfect Match</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!--Navigation Bar-->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="landing_Page.html" class="nav-logo">Pawfect Match</a>
+      <nav class="nav-links">
+        <a href="adoption_Page.html" class="nav-active">Adopt</a>
+        <a href="how_to_adopt.html">How to Adopt</a>
+        <a href="resources.html">Resources</a>
+        <a href="about_contact.html" class="nav-btn">About & Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="back-link">
+      <button onclick="goBack()">&larr; Back to Available Pets</button>
+    </div>
+
+    <section class="form-card">
+      <h1 class="form-title">Book Your Adoption Visit</h1>
+      <p class="form-subtitle">
+        We can’t wait for you to meet your future companion! Fill out the form
+        below to schedule your visit or adoption appointment.
+      </p>
+
+    <form onsubmit="handleBookingSubmit(event)">
+
+      <input type="hidden" name="access_key" value="fcaf0aa9-d7bc-4a06-9e79-21013075e5fc">
+      <input type="hidden" name="subject" value="New Adoption Appointment Request">
+      <input type="hidden" name="redirect" value="thank_you.html">
+
+  <div class="form-group">
+    <label for="fullName">Full Name</label>
+    <input id="fullName" name="fullName" class="form-control" required />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" class="form-control" required />
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input id="phone" name="phone" class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label for="pet">Visit Details</label>
+    <select id="pet" name="pet" class="form-select" required>
+      <option value="">Select Animal You’d Like To Meet</option>
+      <option>Coal</option>
+      <option>Patches</option>
+      <option>Rex</option>
+      <option>Noir</option>
+      <option>Gaara</option>
+      <option>Cinnamon</option>
+    </select>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="visitDate">Preferred Visit Date</label>
+      <input id="visitDate" name="visitDate" type="date" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+      <label for="timeSlot">Preferred Time Slot</label>
+      <select id="timeSlot" name="timeSlot" class="form-select" required>
+        <option>10 AM - 11 AM</option>
+        <option>12 PM - 1 PM</option>
+        <option>2 PM - 3 PM</option>
+        <option>4 PM - 5 PM</option>
+      </select>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:22px;">
+    <button class="btn-primary" type="submit">
+      Submit Appointment Request
+    </button>
+  </div>
+</form>
+
+    </section>
+  </main>
+
+  <footer class="footer-strip">
+    <div class="footer-inner">Email: pawfectmatchh@gmail.com</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About & Contact - Pawfect Match</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!--Navigation Bar-->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="landing_Page.html" class="nav-logo">Pawfect Match</a>
+      <nav class="nav-links">
+        <a href="adoption_Page.html">Adopt</a>
+        <a href="how_to_adopt.html">How to Adopt</a>
+        <a href="resources.html">Resources</a>
+        <a href="about_contact.html" class="nav-btn">About & Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about-contact-grid">
+      <!-- About side -->
+      <div class="about-text">
+        <h1 class="section-title" style="text-align:left;">About Us</h1>
+        <p>
+          We are a group of seniors at SJSU creating a website to make it
+          easier to adopt pets. We are focusing on creating the simplest and
+          easiest way to adopt.
+        </p>
+
+        <div class="creators-list">
+          <h3>Creators</h3>
+          <ul>
+            <li>Sedin</li>
+            <li>David</li>
+            <li>Kiran</li>
+            <li>Roshan</li>
+            <li>Giselle</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact side -->
+    <div>
+      <h1 class="section-title" style="text-align:left;">Contact Us</h1>
+
+    <form onsubmit="handleContactSubmit(event)" method="POST">
+
+    <input type="hidden" name="access_key" value="fcaf0aa9-d7bc-4a06-9e79-21013075e5fc">
+    <input type="hidden" name="subject" value="New Contact Message">
+    <input type="hidden" name="redirect" value="thank_you.html">
+
+    <div class="form-group">
+      <label for="contactName">Full Name</label>
+      <input id="contactName" name="name" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+      <label for="contactEmail">Email</label>
+      <input id="contactEmail" name="email" type="email" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+      <label for="contactMessage">Message</label>
+      <textarea id="contactMessage" name="message" class="form-textarea" required></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary">Send Message</button>
+</form>
+
+      </div>
+    </section>
+  </main>
+  <!--Footer-->
+  <footer class="footer-strip">
+    <div class="footer-inner">
+      Email: pawfectmatchh@gmail.com
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,453 @@
+/* Global */
+html, body {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: #111827;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3b6ea5;
+  color: #ffffff;
+}
+
+.navbar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-logo:hover {
+  color: #dce6f9;
+}
+
+.nav-btn {
+  color: #111827 !important;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-weight: 600;
+  opacity: 0.9;
+}
+.nav-links a:hover {
+  opacity: 1;
+}
+
+/* Hover effects for the entire navbar */
+.nav-links a,
+.nav-logo {
+  color: white;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-logo:hover {
+  color: #dce6f9; 
+}
+
+/* About & Contact pill button */
+.nav-btn {
+  background-color: #f9fafb;  
+  color: #111827;             
+  padding: 10px 26px;          
+  border-radius: 999px;        
+  font-weight: 700;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: #dce6f9;
+  color: #1f3f66;        
+}
+
+/* Active nav item */
+.nav-active {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-block;
+  background-color: #3b6ea5;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+
+/* Hero (Home) */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  min-height: 360px;
+}
+
+.hero-title {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  margin-bottom: 24px;
+  color: #4b5563;
+}
+
+.hero-image img {
+  width: 360px;     
+  max-width: 100%;
+  margin-left: 40px;
+}
+
+/* Section titles */
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+}
+
+/* Pet cards grid */
+.pets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.pet-card {
+  border: 1px solid #d4d4d4;
+  padding: 18px;
+  height: 400px;
+  text-align: center;
+}
+
+.pet-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: column;
+  margin-bottom: space-between;
+}
+
+.pet-name {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.pet-desc {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+/* Pet details page*/
+.back-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.back-link button {
+  background-color: #3b6ea5;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;  
+  border-radius: 8px; 
+  font-size: 1rem;   
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: 0.2s ease;
+}
+.back-link button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.pet-details-main {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.pet-main-img {
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  margin: 0 auto 20px; 
+}
+
+.pet-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.pet-age {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.pet-tagline {
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 24px;
+}
+
+/* Details list (icons / text) */
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 24px;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.details-item span.label {
+  font-weight: 700;
+}
+
+.pet-bio {
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/* How to Adopt Styling */
+.how-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.how-text p {
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.step-buttons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+/* Form styling */
+.form-card {
+  max-width: 720px;
+  margin: 0 auto;
+  border: 1px solid #d4d4d4;
+  padding: 30px 40px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.form-subtitle {
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 26px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-control,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  font-size: 0.95rem;
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* two-column row in form */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Resources cards */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.resource-card {
+  text-align: center;
+}
+
+.resource-card img {
+  border-radius: 18px;
+  margin-bottom: 14px;
+}
+
+.resource-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.resource-body {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+/* About / Contact */
+.about-contact-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.creators-list {
+  margin-top: 20px;
+}
+
+.creators-list h3 {
+  margin-bottom: 10px;
+}
+
+.creators-list ul {
+  list-style: none;
+}
+
+.creators-list li {
+  margin-bottom: 4px;
+}
+
+/* Simple footer strip */
+.footer-strip {
+  background-color: #3b6ea5;
+  color: #ffffff;
+  padding: 16px 20px;
+  margin-top: auto;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+/* Basic responsiveness */
+@media (max-width: 900px) {
+  .hero,
+  .how-layout,
+  .about-contact-grid,
+  .form-row {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .pets-grid,
+  .resources-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .pets-grid,
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+}
+.pet-profile-card {
+  background: #f3f5f7;
+  padding: 50px 50px;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
