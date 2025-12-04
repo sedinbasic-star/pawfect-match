@@ -1,0 +1,83 @@
+<!-- 
+  File: pet-gaara.html
+  Author: Kirandeep Bangar
+
+  Description:
+  This page displays the full profile of Gaara, an adoptable pet in the 
+  Pawfect Match system. It includes his photo, age, breed, size, personality 
+  traits, and a detailed biography. The page also provides a direct link for 
+  users to book an adoption visit for Gaara.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coal - Pawfect Match</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!--Navigation Bar-->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="landing_Page.html" class="nav-logo">Pawfect Match</a>
+      <nav class="nav-links">
+        <a href="adoption_Page.html" class="nav-active">Adopt</a>
+        <a href="how_to_adopt.html">How to Adopt</a>
+        <a href="resources.html">Resources</a>
+        <a href="about_contact.html" class="nav-btn" >About & Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="back-link">
+      <button onclick="goBack()">&larr; Back</button>
+    </div>
+  <div class="pet-profile-card">
+    <section class="pet-details-main">
+      <img src="images/gaara.jpg" alt="Coal the dog" class="pet-main-img" />
+
+      <h1 class="pet-title">Gaara</h1>
+      <p class="pet-age">6 months old</p>
+      <p class="pet-tagline">Calm and cuddly. Loves quiet homes.</p>
+
+      <div class="details-grid">
+        <div class="details-item">
+          <span class="label">Breed:</span> Ginger Tabby
+        </div>
+        <div class="details-item">
+          <span class="label">Size:</span> Small
+        </div>
+        <div class="details-item">
+          <span class="label">Gender:</span> Male
+        </div>
+        <div class="details-item">
+          <span class="label">Personality:</span> Sweet &amp; Gentle
+        </div>
+        <div class="details-item">
+          <span class="label">Color:</span> Orange
+        </div>
+        <div class="details-item">
+          <span class="label">Good with:</span> First-time cat owners 
+        </div>
+      </div>
+
+      <p class="pet-bio">
+        Gaara is a soft-tempered, cuddly 6-month-old ginger kitten who loves warmth and quiet environments. 
+        He’s still young, so he’s full of curiosity, but his personality is surprisingly calm for a kitten. 
+        Gaara enjoys gentle pets, cozy naps, and being near his person. 
+        He would do great in a home looking for a mellow, affectionate young cat who will grow into a loving lifelong companion.
+      </p>
+
+      <div style="text-align:center;">
+        <a href="book_adoption_visit.html" class="btn-primary">Adopt Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-strip">
+    <div class="footer-inner">Email: pawfectmatchh@gmail.com</div>
+  </footer>
+</body>
+</html>

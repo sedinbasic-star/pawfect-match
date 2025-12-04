@@ -1,0 +1,88 @@
+<!-- 
+  File: landing_Page.html
+  Author: Sedin Basic
+
+  Description:
+  This is the main homepage for Pawfect Match. It introduces the 
+  platform’s purpose and provides navigation to adoptable pets, 
+  adoption guidance, resources, and contact information.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pawfect Match - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!--Navigation Bar-->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="landing_Page.html" class="nav-logo">Pawfect Match</a>
+      <nav class="nav-links">
+        <a href="adoption_Page.html">Adopt</a>
+        <a href="how_to_adopt.html">How to Adopt</a>
+        <a href="resources.html">Resources</a>
+        <a href="about_contact.html" class="nav-btn">About & Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1 class="hero-title">Find Your New Best Friend</h1>
+        <p class="hero-subtitle">Connecting pets in need with loving homes.</p>
+        <a href="adoption_Page.html" class="btn-primary">Adopt Now</a>
+      </div>
+
+      <!-- Logo / hero image -->
+      <div class="hero-image">
+        <img src="images/Pawfectmatchlogo.jpg" alt="Pawfect Match logo" />
+      </div>
+    </section>
+
+    <!-- Available pets teaser -->
+    <section style="margin-top: 80px;">
+      <h2 class="section-title">Adoptable Pet Available</h2>
+
+      <div class="pets-grid">
+        <!-- Coal -->
+        <article class="pet-card">
+          <img src="Images/coal.jpg" alt="Coal the dog" />
+          <p class="pet-name">Coal - Black Labrador - 2 years old</p>
+          <p class="pet-desc">Friendly and great with kids</p>
+          <a href="pet-coal.html" class="btn-primary">View Profile</a>
+        </article>
+
+        <!-- Patches -->
+        <article class="pet-card">
+          <img src="Images/patches.jpg" alt="Patches the cat" />
+          <p class="pet-name">Patches - Calico Cat - 1 year old</p>
+          <p class="pet-desc">Calm and cuddly. Loves quiet homes.</p>
+          <a href="pet-patches.html" class="btn-primary">View Profile</a>
+        </article>
+
+        <!-- Rex -->
+        <article class="pet-card">
+          <img src="Images/rex.jpg" alt="Rex the dog" />
+          <p class="pet-name">Rex - German Shepard - 4 years old</p>
+          <p class="pet-desc">Energetic and loyal. Needs space to play.</p>
+          <a href="pet-rex.html" class="btn-primary">View Profile</a>
+        </article>
+      </div>
+
+      <div style="text-align:center; margin-top: 26px;">
+        <a href="adoption_Page.html" class="btn-primary">See all Adoptable Pets</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-strip">
+    <div class="footer-inner">
+      Email: pawfectmatchh@gmail.com
+    </div>
+  </footer>
+</body>
+</html>

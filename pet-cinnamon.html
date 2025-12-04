@@ -1,0 +1,83 @@
+<!-- 
+  File: pet-cinnamon.html
+  Author: David Villegas
+
+  Description:
+  This page displays the full profile of Cinnamon, an adoptable pet in the 
+  Pawfect Match system. It includes her photo, age, breed, size, personality 
+  traits, and a detailed biography. The page also provides a direct link for 
+  users to book an adoption visit for Cinnamon.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coal - Pawfect Match</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!--Navigation Bar-->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="landing_Page.html" class="nav-logo">Pawfect Match</a>
+      <nav class="nav-links">
+        <a href="adoption_Page.html" class="nav-active">Adopt</a>
+        <a href="how_to_adopt.html">How to Adopt</a>
+        <a href="resources.html">Resources</a>
+        <a href="about_contact.html" class="nav-btn">About & Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="back-link">
+      <button onclick="goBack()">&larr; Back</button>
+    </div>
+  <div class="pet-profile-card">
+    <section class="pet-details-main">
+      <img src="images/cinnamon.jpg" alt="Cinnamon the dog" class="pet-main-img" />
+
+      <h1 class="pet-title">Cinnamon</h1>
+      <p class="pet-age">2 months old</p>
+      <p class="pet-tagline">Loves to play. Doesn’t like being alone.</p>
+
+      <div class="details-grid">
+        <div class="details-item">
+          <span class="label">Breed:</span> Beagle
+        </div>
+        <div class="details-item">
+          <span class="label">Size:</span> Small
+        </div>
+        <div class="details-item">
+          <span class="label">Gender:</span> Female
+        </div>
+        <div class="details-item">
+          <span class="label">Personality:</span> Loyal &amp; Protective
+        </div>
+        <div class="details-item">
+          <span class="label">Color:</span> Brown & White
+        </div>
+        <div class="details-item">
+          <span class="label">Good with:</span> Cheerful &amp; Social
+        </div>
+      </div>
+
+      <p class="pet-bio">
+        Cinnamon is an adorable and energetic 2-month-old Beagle puppy who loves exploring, playing, and being close to people.
+        She has a cheerful personality and bonds quickly with anyone who shows her attention. 
+        Because she is still very young, she needs patience, training, and a home where she won’t be left alone for long periods. 
+        With love and guidance, Cinnamon will grow into a friendly, loyal companion.
+      </p>
+
+      <div style="text-align:center;">
+        <a href="book_adoption_visit.html" class="btn-primary">Adopt Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-strip">
+    <div class="footer-inner">Email: pawfectmatchh@gmail.com</div>
+  </footer>
+</body>
+</html>
